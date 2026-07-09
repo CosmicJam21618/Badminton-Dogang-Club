@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogang Badminton Club</title>
+  <style>
+    :root {
+      --bg: #3e2a1e;
+      --panel: #6f4e37;
+      --accent: #a66b3d;
+      --accent-2: #c98f5a;
+      --text: #fffaf3;
+      --muted: #f2e1cf;
+      --highlight: #f7d9a7;
+      --font-main: "Trebuchet MS", Arial, sans-serif;
+      --font-heading: Georgia, serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background: linear-gradient(135deg, #4b3224, #8a5a3d 55%, #caa57a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .hero {
+      padding: 60px 20px 40px;
+      text-align: center;
+      background: radial-gradient(circle at top, rgba(255,240,220,0.2), transparent 60%);
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: var(--highlight);
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #052e16;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 2px solid var(--accent-2);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(109, 73, 45, 0.9);
+      border: 1px solid rgba(255,248,235,0.18);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255, 240, 220, 0.18);
+      color: var(--highlight);
+      margin-bottom: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 20px 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Dogang Badminton Club</h1>
+    <p>At Dogang Badminton Club, we believe the best rallies are the ones played with a smile and a welcoming team spirit. We are a community built on genuine friendship, confidence, and pure joy for the game, no matter your skill level. Every match is an opportunity to show great sportsmanship, lift each other up, and just enjoy the play together!</p>
+    <div class="buttons">
+      <a href="#about" class="btn btn-primary">About Us</a>
+      <a href="#schedule" class="btn btn-secondary">Play Schedule</a>
+      <a href="#members" class="btn btn-secondary">Members</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="card" id="about">
+      <span class="badge">Welcome</span>
+      <h2>About the Club</h2>
+      <p>Welcome to a club where positivity comes first! We focus on building confidence, fostering genuine friendships, and sharing the joy of badminton. Every game is an opportunity to show great sportsmanship, support your teammates, and just enjoy the play. No matter your level, you'll find a welcoming and uplifting team spirit here.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Training</span>
+        <h3>Skill Development</h3>
+        <p>Improve your smash, drop shots, and court movement with weekly training sessions.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Events</span>
+        <h3>Tournaments</h3>
+        <p>Join friendly matches, local competitions, and club events throughout the season.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Community</span>
+        <h3>Team Spirit</h3>
+        <p>Build confidence, connect with teammates, and enjoy the game together.</p>
+      </div>
+    </div>
+
+    <div class="card" id="schedule">
+      <span class="badge">Schedule</span>
+      <h2>Play Schedule</h2>
+      <p>Monday(Evening Play) – 6:00PM or 8:00PM to 10:00PM(80 or 100 Pesos Court fee) <br>Thursday(Morning and Evening Play) - 6:00AM to 9:30AM and 6:00PM to 8:00PM(50 and 70 Pesos Court fee) <br>Wednesday – None yet? <br>Thursday(Morning and Evening Play) - 6:00AM to 9:30AM and 6:00PM to 8:00PM(50 and 70 Pesos Court fee) <br>Friday(Evening Play) – 6:00PM or 8:00PM to 10:00PM(80 or 100 Pesos Court fee)</p>
+    </div>
+
+    <div class="card" id="members">
+      <span class="badge">Team</span>
+      <h2>Our Members</h2>
+      <p>Meet the talented players who make Dogang Badminton Club thrive.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Player</span>
+        <h3>Justin</h3>
+        <p><strong>Position:</strong> All-rounder</p>
+        <p>Versatile player excelling in all aspects of the game.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Player</span>
+        <h3>Noah</h3>
+        <p><strong>Position:</strong> All-rounder</p>
+        <p>Strong all-around player with excellent court skills.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Player</span>
+        <h3>Jode</h3>
+        <p><strong>Position:</strong> All-rounder</p>
+        <p>Talented player capable of playing any role on the court.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Player</span>
+        <h3>Darrel</h3>
+        <p><strong>Position:</strong> All-rounder</p>
+        <p>Dynamic player with solid fundamentals and court awareness.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Player</span>
+        <h3>Ian</h3>
+        <p><strong>Position:</strong> All-rounder</p>
+        <p>Committed player bringing energy and skill to every match.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Player</span>
+        <h3>Mateo</h3>
+        <p><strong>Position:</strong> All-rounder</p>
+        <p>Consistent performer contributing to the team's success.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Dogang Badminton Club. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
